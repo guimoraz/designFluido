@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Design Fluído</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-button" onclick="openMenu()">&#9776;</div>
+        <h1 id="titulo">Design Fluido</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="sobre.html">Sobre mim</a>
+        </nav>
+    </header>
+
+    <div class="menu">
+        <button class="close-button" onclick="closeMenu()">&times;</button>
+        <ul>
+            <li><button onclick="scrollToSection('section1')">O que é?</button></li>
+            <li><button onclick="scrollToSection('section2')">Vantagens e desvantagens</button></li>
+            <li><button onclick="scrollToSection('section3')">Exemplos</button></li>
+        </ul>
+    </div>
+
+    <main>
+        <div>
+            <h2 name="section1">O que é?</h2>
+            <p class="card">Layouts fluidos são aqueles que utilizam uma porcentagem do espaço ao invés de uma largura
+                fixa, mantendo a sua estrutura. Desta forma, os elementos se expandem e se contraem para acompanhar o tamanho
+                da janela. Com a popularização do layout responsivo, o design fluido tem caído em desuso devido ao surgimento dos media queries.</p>
+            <img src="imgs/exemplo.jpg" alt="Exemplo de pagina fluída" class="card">
+
+        </div>
+        <div id="vanDes" name="section2">
+            <h2 name="section2"></h2>
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p>Vantagens</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                        <ul>
+                            <li>Adaptação em diversos dispositivos</li>
+                            <li>Simples implementação</li>
+                            <li>Manutenção facilitada</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p>Desvantagens</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>Texto e imagens distorcidos</li>
+                            <li>Visual disforme em alguns formatos</li>
+                            <li>Impreciso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div name="section3">
+            <h2>Exemplo:</h2>
+            <div>
+                <a href="https://www.reddit.com/" target="_blank"><img src="imgs/reddit.png" alt="Logo do reddit" class="exemplo"></a>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
